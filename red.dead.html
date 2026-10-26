@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read Dead Redemption</title>
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=Jersey+25&display=swap');
+        body{
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color:  #0A0A0A;
+            color: white;
+        }
+
+        header{
+            background-color: #2b2a2a;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 3px solid #E50914;
+        }
+
+        header h1{
+            color: #E50914;
+            font-family: "Jersey 25", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 55px;
+        }
+
+        nav{
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a{
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover{
+            color: #E50914;
+        }
+
+          .card{
+            background-color:#2b2a2a;
+            width: 550px;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .card img{
+            width: 550px;
+            height: 450px;
+            border-radius: 10px;
+        }
+
+        .card h3{
+            color: #E50914;
+            font-size: 25px;
+        }
+          .card:hover{
+            transform: scale(1.05);
+        }
+
+         #games{
+            display: flex;
+            justify-content: center;
+            gap: 20px; /*espaçamento entre divs*/
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .btn-game{
+            margin-top: 15px;
+            background-color: #E50914;
+            color: #2b2a2a;
+            padding: 12px 25px;
+            border-radius: 9px;
+            font-size: 15px;
+            font-weight: bold;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+        .btn-game:hover{
+            background-color: #2b2a2a;
+            color: #E50914;
+            box-shadow: 0 0 15px #E50914;
+            transform: translateY(-2px);
+        }
+
+         .btn-game:active{
+            transform: scale(0.90);
+        }
+
+        footer{
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+            background-color: #2b2a2a;
+        }
+        
+    </style>
+</head>
+<body>
+     <header>
+        <h1>Action Core💥</h1>
+    </header>
+
+    <nav>
+    <a href="./home.html"> Início</a>
+    <a href="./home.html#jogos"> Jogos</a>
+    <a href="./home.html#ranking">Ranking</a>
+    <a href="./login.html"> Sair</a>
+    </nav>
+
+    <section id="games">
+    <div class="card">
+          <img src="./img/red-dead.jpg" alt="Red Dead">
+           <a href="https://youtu.be/i1fRYeZ_eWs?si=3Q5DgkO2Jvdo6iyj" target="_blank" class="btn-game">Jogar🎮</a>
+          <p>Traído pelo seu próprio bando, sua única escolha é lutar pela redenção.</p>
+    </div>
+   </section>
+
+   <footer>
+        &copy;Gamezone2026
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home-Action Core</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Jersey+25&display=swap');
+
+       body{
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color:  #0A0A0A;
+            color: white;
+        }
+
+        header{
+            background-color: #2b2a2a;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 3px solid #E50914;
+        }
+
+        header h1{
+            color: #E50914;
+            font-family: "Jersey 25", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 55px;
+        }
+
+        nav{
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a{
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover{
+            color: #E50914;
+        }
+
+        #banner{
+            text-align: center;
+            padding: 40px;
+        }
+
+        #banner h2{
+            color: #E50914;
+            font-size: 50px;
+        }
+
+        #banner img{
+            width: 750px;
+        }
+
+        #jogos{
+            display: flex;
+            justify-content: center;
+            gap: 20px; /*espaçamento entre divs*/
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .card{
+            background-color:#2b2a2a;
+            width: 250px;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .card img{
+            width: 250px;
+            height: 150px;
+            border-radius: 10px;
+        }
+
+        .card h3{
+            color: #E50914;
+            font-size: 25px;
+        }
+
+        .card:hover{
+            transform: scale(1.10);
+        }
+       
+        footer{
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+            background-color: #2b2a2a;
+        }
+
+        #ranking{
+            text-align: center;
+        }
+
+        .ranking-lista{
+            margin: auto;
+            border-collapse: collapse;
+            width: 900px;
+            text-align: center;
+            border: 1px solid #E50914;
+        }
+
+        .top-5{
+            margin: auto;
+            border-collapse: collapse;
+            width: 700px;
+            text-align: center;
+            border: 1px solid #E50914;
+        }
+
+        th, td{
+            border: 1px solid #E50914;
+            padding: 8px 10px;
+        }
+
+        tr:hover{
+            background-color: #E50914;
+            color: #121212;
+        }
+           .card h3 a{
+            text-decoration: none;
+            color: inherit;
+           }
+        .card h3 a:hover{
+           color: aliceblue;
+        }
+        .absoluto{
+            text-align: center;
+        }
+
+     
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1>Action Core💥</h1>
+    </header>
+
+    <nav>
+    <a href="./home.html"> Início</a>
+    <a href="./home.html#jogos"> Jogos</a>
+    <a href="./home.html#ranking">Ranking</a>
+    <a href="./login.html"> Sair</a>
+    </nav>
+
+    <section id="banner">
+    <h2>
+        Bem-Vindo à Plataforma!
+    </h2>
+    <p>
+       Descubra novos jogos e divirta-se com seus amigos
+    </p>
+    <img src="./img/banner.jpg">
+    </section>
+
+    <section id="jogos">
+        <div class="card">
+          <img src="./img/god of war (2).jpg" alt="god of war">
+          <h3>
+            <a href="./god.of.war.html"> God Of war</a>
+          </h3>
+          <p> Um passado sangrento. Um filho para guiar. Um panteão para enfrentar. </p>
+          </div>
+
+         <div class="card">
+          <img src="./img/red-dead.jpg" alt="Red Dead">
+          <h3>
+            <a href="./red.dead.html">Red Dead Redemption</a>
+          </h3>
+          <p>Traído pelo seu próprio bando, sua única escolha é lutar pela redenção.</p>
+        </div>
+          
+         <div class="card">
+          <img src="./img/Resident Evil 4.jpg" alt="Resident evil">
+           <h3>
+            <a href="./resident.evil.html">Resident Evil</a>
+          </h3>
+          <p>Sobreviva ao terror biológico onde cada bala e cada segundo contam.</p>
+          </div>
+
+           <div class="card">
+          <img src="./img/call duty.jpg" alt="call duty">
+           <h3>
+            <a href="./call.duty.html"> Call Duty</a>
+          </h3>
+          <p>No olho do furacão da guerra moderna, sua única opção é vencer ou cair.</p>
+          </div>
+
+        
+    </section>
+
+    <section id="ranking">
+        <h1> Melhores Jogos Para Pc</h1>
+
+        <table class="ranking-lista">
+            <thead>
+            <tr>
+             <th>#</th>
+             <th>Jogo</th>
+             <th>Gênero</th>
+             <th>Ano</th>
+             <th>Nota</th>
+            </tr>
+
+            </thead>
+            <tbody>
+                <tr><td class="rank">1</td><td>Elden Ring</td><td>RPG / Ação</td><td>2022</td><td class="nota">96</td></tr>
+            <tr><td class="rank">2</td><td>Baldur's Gate 3</td><td>RPG</td><td>2023</td><td class="nota">96</td></tr>
+            <tr><td class="rank">3</td><td>Cyberpunk 2077 (2.0)</td><td>RPG / Ação</td><td>2020</td><td class="nota">90</td></tr>
+            <tr><td class="rank">4</td><td>Red Dead Redemption 2</td><td>Ação / Mundo Aberto</td><td>2019</td><td class="nota">97</td></tr>
+            <tr><td class="rank">5</td><td>The Witcher 3</td><td>RPG</td><td>2015</td><td class="nota">93</td></tr>
+            <tr><td class="rank">6</td><td>God of War</td><td>Ação</td><td>2022</td><td class="nota">94</td></tr>
+            <tr><td class="rank">7</td><td>Hades</td><td>Roguelike</td><td>2020</td><td class="nota">93</td></tr>
+            <tr><td class="rank">8</td><td>DOOM Eternal</td><td>FPS</td><td>2020</td><td class="nota">88</td></tr>
+            <tr><td class="rank">9</td><td>Sekiro: Shadows Die Twice</td><td>Ação</td><td>2019</td><td class="nota">90</td></tr>
+            <tr><td class="rank">10</td><td>Half-Life: Alyx</td><td>FPS / VR</td><td>2020</td><td class="nota">93</td></tr>
+            <tr><td class="rank">11</td><td>Minecraft</td><td>Sandbox</td><td>2011</td><td class="nota">93</td></tr>
+            <tr><td class="rank">12</td><td>Counter-Strike 2</td><td>FPS Competitivo</td><td>2023</td><td class="nota">89</td></tr>
+            <tr><td class="rank">13</td><td>Forza Horizon 5</td><td>Corrida</td><td>2021</td><td class="nota">92</td></tr>
+            <tr><td class="rank">14</td><td>Resident Evil 4 Remake</td><td>Terror / Ação</td><td>2023</td><td class="nota">93</td></tr>
+            <tr><td class="rank">15</td><td>Helldivers 2</td><td>Tiro Cooperativo</td><td>2024</td><td class="nota">89</td></tr>
+            </tbody>
+    </table>
+</section>
+
+        </table>
+        
+        <h2 class="absoluto">⭐ Top 5 Absoluto para PC</h2>
+        
+        <tbody>
+            
+
+    <table class="top-5">
+        <thead>
+            <tr>
+                <th>Posição</th>
+                <th>Jogo</th>
+                <th>Motivo</th>
+                <th>Nota</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="rank">🥇 1º</td>
+                <td>Elden Ring</td>
+                <td>Melhor combinação de exploração, combate e liberdade.</td>
+                <td class="nota">96</td>
+            </tr>
+            <tr>
+                <td class="rank">🥈 2º</td>
+                <td>Baldur's Gate 3</td>
+                <td>Referência moderna em RPG e narrativa.</td>
+                <td class="nota">96</td>
+            </tr>
+            <tr>
+                <td class="rank">🥉 3º</td>
+                <td>Red Dead Redemption 2</td>
+                <td>Mundo aberto extremamente detalhado.</td>
+                <td class="nota">97</td>
+            </tr>
+            <tr>
+                <td class="rank">4º</td>
+                <td>The Witcher 3</td>
+                <td>Uma das melhores histórias dos videogames.</td>
+                <td class="nota">93</td>
+            </tr>
+            <tr>
+                <td class="rank">5º</td>
+                <td>Cyberpunk 2077 (Atualizado)</td>
+                <td>Excelente RPG futurista após as atualizações.</td>
+                <td class="nota">90</td>
+            </tr>
+        </tbody>
+    </table>
+           
+    </section>
+        </tbody>
+    
+     
+    <footer>
+        &copy;Gamezone2026
+    </footer>
+</body>
+</html>
